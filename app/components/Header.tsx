@@ -44,7 +44,8 @@ const Header = () => {
 
 
     return (
-        <div className='w-full absolute top-0' onMouseLeave={() => { setShowId(''); setShow(false) }}>
+        <div className='w-full z-30 fixed top-0' onMouseLeave={() => { setShowId(''); setShow(false) }}>
+            {/* ^ absolute?? insted of 'z-30 fixed' */}
             <header className={`z-30 w-full absolute flex items-center py-4 ${show ? 'text-black' : 'text-white'}`}>
                 <h1 className='basis-0 flex-grow flex justify-start pl-8'>
                     <Link
@@ -79,7 +80,6 @@ const Header = () => {
 
             <HeaderDialog show={show} showId={showId} />
         </div>
-
     )
 }
 

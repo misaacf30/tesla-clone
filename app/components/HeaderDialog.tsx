@@ -58,7 +58,7 @@ const HeaderDialog = ({ showId, show }: Props) => {
         ${show ? 'max-h-[96vh] opacity-100' : ''}`}>
             {/* pb-12 */}
             <div className={`w-full grid grid-cols-12 px-12 opacity-0 max-h-0 overflow-hidden duration-300
-                ${showId === 'vehicles' ? 'mt-12 pt-12 pb-12 opacity-100 max-h-[96vh]' : ''}`}>
+                ${showId === 'vehicles' ? 'mt-12 pt-12 pb-12 opacity-100 max-h-[96vh]' : 'max-h-0'} `}>
                 <div className='col-start-2 col-end-9  w-full flex flex-wrap gap-4'>
                     {vehicles[0].firstCol.map((item: any, index: number) =>
                         <div key={index} className='flex flex-col'>
@@ -95,7 +95,7 @@ const HeaderDialog = ({ showId, show }: Props) => {
             </div>
 
             <div className={`w-full grid grid-cols-12 px-12 opacity-0 max-h-0 overflow-hidden duration-300 
-                ${showId === 'energy' ? 'mt-12 pt-12 pb-12 opacity-100 max-h-[96vh]' : ''} `}>
+                ${showId === 'energy' ? 'mt-12 pt-12 pb-12 opacity-100 max-h-[96vh]' : 'max-h-0'} `}>
                 <div className='col-start-2 col-end-9  w-full flex flex-wrap gap-4'>
                     {energy[0].firstCol.map((item: any, index: number) =>
                         <div key={index} className='flex flex-col'>
@@ -132,7 +132,7 @@ const HeaderDialog = ({ showId, show }: Props) => {
             </div>
 
             <div className={`w-full grid grid-cols-12 px-12 opacity-0 max-h-0 overflow-hidden duration-300
-                ${showId === 'charging' ? 'mt-12 pt-12 pb-12  opacity-100 max-h-[96vh]' : ''}`}>
+                ${showId === 'charging' ? 'mt-12 pt-12 pb-12  opacity-100 max-h-[96vh]' : 'max-h-0'}`}>
                 <div className='col-start-2 col-end-9  w-full flex flex-wrap gap-4'>
                     {charging[0].firstCol.map((item: any, index: number) =>
                         <div key={index} className='flex flex-col'>
@@ -169,7 +169,7 @@ const HeaderDialog = ({ showId, show }: Props) => {
             </div>
 
             <div className={`w-full grid grid-cols-12 px-12 opacity-0 max-h-0 overflow-hidden duration-300
-                ${showId === 'discover' ? 'mt-12 pt-12 pb-12  opacity-100 max-h-[96vh]' : ''}`}>
+                ${showId === 'discover' ? 'mt-12 pt-12 pb-12  opacity-100 max-h-[96vh]' : 'max-h-0'}`}>
                 <div className='col-start-4 col-end-10 w-full grid grid-cols-3'>
                     {discover.map((item: any, index: number) =>
                         <div key={index} className='flex flex-col gap-2'>
@@ -186,7 +186,7 @@ const HeaderDialog = ({ showId, show }: Props) => {
             </div>
 
             <div className={`w-full grid grid-cols-12 px-12 opacity-0 max-h-0 overflow-hidden duration-300
-                ${showId === 'shop' ? 'mt-12 pt-12 pb-12 opacity-100 max-h-[96vh]' : ''}`}>
+                ${showId === 'shop' ? 'mt-12 pt-12 pb-12 opacity-100 max-h-[96vh]' : 'max-h-0'}`}>
                 <div className='col-start-3 col-end-11 w-full grid grid-cols-4'>
                     {shop.map((item: any, index: number) =>
                         <div key={index} className='flex flex-col justify-center items-center gap-2'>
