@@ -20,7 +20,7 @@ const cybertruck = { imageUrl: '/homepage/homepage-cybertruck.avif', button1: 'O
   buttonColor: 'light', color: 'black'
 }
 const demoDrive = { title: 'Experience Tesla', paragraph: 'Schedule a Demo Drive Today', videoUrl: '/homepage/homepage-demoDrive.webm',
-  posterUrl: '/homepage/demoDrive-poster.avif', button1: 'Demo Drive', buttonColor: 'clear', color: 'white'
+  posterUrl: '/homepage/homepage-demoDrive-poster.avif', button1: 'Demo Drive', buttonColor: 'clear', color: 'white'
 }
 
 

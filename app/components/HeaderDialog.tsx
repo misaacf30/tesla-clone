@@ -175,8 +175,8 @@ const HeaderDialog = ({ showId, show }: Props) => {
                         <div key={index} className='flex flex-col gap-2'>
                             <h2>{item.title}</h2>
                             <div className='flex flex-col'>
-                                {item.items.map((i: any) =>
-                                    <p>{i}</p>
+                                {item.items.map((itm: any, index: number) =>
+                                    <p key={index}>{itm}</p>
                                 )}
                             </div>
                         </div>
