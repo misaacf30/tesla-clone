@@ -1,3 +1,5 @@
+![project2](https://github.com/misaacf30/tesla-clone/assets/66347307/555360fa-dcb3-41a9-bd85-4d5a2b9c0b7e)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
