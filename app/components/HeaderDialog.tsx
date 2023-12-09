@@ -162,9 +162,16 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
                             <div className='flex flex-col sm:text-center'>
                                 <p className='text-[17px] font-semibold'>{item.title}</p>
-                                <div className='text-[#5C5E62] text-[14px] xl:text-[12px] space-x-4 underline'>
-                                    <span>Learn</span>
-                                    <span>Order</span>
+                                <div className='text-[#5C5E62] text-[14px] xl:text-[12px] font-medium space-x-4 underline underline-offset-2'>
+                                    {item.getStarted
+                                        ?
+                                        <span>Get Started</span>
+                                        :
+                                        <>
+                                            <span>Learn</span>
+                                            <span>Order</span>
+                                        </>
+                                    }
                                 </div>
                             </div>
                         </div>
@@ -203,7 +210,7 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
                             <div className='flex flex-col sm:text-center'>
                                 <p className='text-[17px] font-semibold'>{item.title}</p>
-                                <div className='text-[#5C5E62] text-[14px] xl:text-[12px] space-x-4 underline'>
+                                <div className='text-[#5C5E62] text-[14px] xl:text-[12px] font-medium space-x-4 underline underline-offset-2'>
                                     <span>Learn</span>
                                     <span>Order</span>
                                 </div>
@@ -243,9 +250,14 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
                             <div className='flex flex-col sm:text-center'>
                                 <p className='text-[17px] font-semibold'>{item.title}</p>
-                                <div className='text-[#5C5E62] text-[14px] xl:text-[12px] space-x-4 underline'>
+                                <div className='text-[#5C5E62] text-[14px] xl:text-[12px] font-medium space-x-4 underline underline-offset-2'>
                                     <span>Learn</span>
-                                    <span>Order</span>
+                                    {item.learnAndShop &&
+                                        <span>Shop</span>
+                                    }
+                                    {item.learnAndFind &&
+                                        <span>Find</span>
+                                    }
                                 </div>
                             </div>
                         </div>
