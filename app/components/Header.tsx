@@ -88,7 +88,6 @@ const Header = () => {
                         </span>
                     </button>
                 </div>
-
             </header>
 
             <HeaderDialog show={show} showId={showId} setShow={setShow} setShowId={setShowId}/>
