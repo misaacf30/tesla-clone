@@ -45,12 +45,9 @@ const Header = () => {
 
 
     return (
-        <div className='w-full z-30 fixed top-0'
-            onMouseLeave={() => { setShowId(''); setShow(false) }}
-        >
-            {/* ^ absolute?? insted of 'z-30 fixed' */}
-            <header className={`z-30 w-full absolute flex items-center py-4 ${show ? 'text-[#171A20]' : 'text-white'}`}>
-                <h1 className='basis-0 flex-grow flex justify-start pl-8'>
+        <div className='w-full z-30 fixed top-0'>
+            <header className={`z-30 w-full absolute flex max-[1200px]:justify-between items-center py-4 ${show ? 'text-[#171A20]' : 'text-white'}`}>
+                <h1 className='basis-0 flex-grow flex justify-start pl-[8px] md:pl-[20px] xl:pl-[32px]'>
                     <Link
                         href={'/'}
                         className='px-4'
@@ -63,7 +60,7 @@ const Header = () => {
                         </svg>
                     </Link>
                 </h1>
-                <ul className='flex justify-center text-sm font-semibold [&>li>*]:inline-block [&>li>*]:px-2 [&>li>*]:py-1 [&>li>*]:rounded-md'>
+                <ol className='hidden xl:flex justify-center text-sm font-semibold [&>li>*]:inline-block [&>li>*]:px-2 [&>li>*]:py-1 [&>li>*]:rounded-md'>
                     {navItemsCenter.map((item, index) =>
                         <li key={index}>
                             <span id={item.id} className={` ${showId === item.id && 'bg-[#0000000d] backdrop-blur-3xl'} cursor-pointer`}
@@ -73,17 +70,28 @@ const Header = () => {
                             </span>
                         </li>
                     )}
-                </ul>
-                <ul className='basis-0 flex-grow flex justify-end pr-8 [&>*]:px-2'>
+                </ol>
+                <ol className='hidden basis-0 xl:flex flex-grow justify-end pr-[32px] [&>*]:px-2'>
                     {navItemsRight.map((item, index) =>
                         <li key={index}>
                             {item}
                         </li>
                     )}
-                </ul>
+                </ol>
+                <div className='xl:hidden flex justify-end items-center pr-[20px]'>
+                    <button
+                        className=' flex px-2 py-1 rounded-[4px] bg-[#0000000d] backdrop-blur-3xl' 
+                        onClick={() => setShow(true)}
+                    >
+                        <span className='text-[14px] font-medium mx-2'>
+                            Menu
+                        </span>
+                    </button>
+                </div>
+
             </header>
 
-            <HeaderDialog show={show} showId={showId} />
+            <HeaderDialog show={show} showId={showId} setShow={setShow} setShowId={setShowId}/>
         </div>
     )
 }

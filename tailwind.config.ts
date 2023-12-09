@@ -11,6 +11,13 @@ const config: Config = {
       backgroundImage: {
       },
     },
+    screens: {
+      'sm': '450px',
+      'md': '650px',
+      'lg': '900px',
+      'xl': '1200px',
+      '2xl': '1450px',
+    }
   },
   plugins: [],
 }
