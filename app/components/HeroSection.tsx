@@ -16,8 +16,8 @@ interface Props {
 
 const HeroSectionTest = ({ title, subtitle, paragraph, bottomParagraph, imageUrl, videoUrl, posterUrl, button1, button2, buttonColor, color }: Props) => {
   return (
-    <section className={`relative h-[100svh] sm:h-[100vh] overflow-hidden flex 
-        ${color === 'white' ? 'text-white' : 'text-[#171A20]'} snap-center`}
+    <section className={`h-[100svh] sm:h-[100vh] relative flex snap-center overflow-hidden
+        ${color === 'white' ? 'text-white' : 'text-[#171A20]'}`}
     >
       <div className='z-0 w-full relative flex flex-col text-center'>
         <h1 className='flex-none text-5xl font-semibold px-6 mt-40'>{title}</h1>

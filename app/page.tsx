@@ -32,8 +32,7 @@ const demoDrive = {
 
 export default function Home() {
   return (
-    <main className='h-[100vh]'> {/* fallback for browsers that do not suppport custom properties */}
-      <div className='snap-y snap-mandatory relative h-[100svh] sm:h-[100vh] overflow-auto'>
+    <main className='snap-y snap-mandatory relative h-[100svh] sm:h-[100vh] overflow-auto'> {/* h-screen fallback for browsers that do not suppport custom properties */}
         <HeroSection title={modelY.title} subtitle={modelY.subtitle} bottomParagraph={modelY.bottomParagraph} videoUrl={modelY.videoUrl}
           posterUrl={modelY.posterUrl} button1={modelY.button1} button2={modelY.button2} buttonColor={modelY.buttonColor} color={modelY.color} />
 
@@ -51,7 +50,6 @@ export default function Home() {
 
         <HeroSection title={demoDrive.title} paragraph={demoDrive.paragraph} videoUrl={demoDrive.videoUrl} posterUrl={demoDrive.posterUrl}
           button1={demoDrive.button1} buttonColor={demoDrive.buttonColor} color={demoDrive.color} />
-      </div>
     </main>
   )
 }
