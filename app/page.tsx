@@ -1,19 +1,19 @@
 import HeroSection from './components/HeroSection'
 
 const modelY =  { title: 'Model Y', subtitle: 'Lease starting at $399/mo', videoUrl: '/homepage/homepage-modelY.mp4',
-  posterUrl: '/homepage/homepage-modelY-poster.avif', button1: 'Order Now', button2: 'Demo Drive', buttonColor: 'dark', color: 'white',
+  posterUrl: '/homepage/homepage-modelY-poster.avif', button1: 'Explore Inventory', button2: 'Demo Drive', buttonColor: 'dark', color: 'white',
   bottomParagraph:' *Excludes taxes and fees with price subject to change. Available in select states. See Details' 
 }
 const model3 =  { title: 'Model 3', subtitle: 'Lease starting at $329/mo', imageUrl: '/homepage/homepage-model3.avif', 
-  button1: 'Order Now', button2: 'Demo Drive', buttonColor: 'light', color: 'white',
+  button1: 'Explore Inventory', button2: 'Demo Drive', buttonColor: 'light', color: 'white',
   bottomParagraph:' *Excludes taxes and fees with price subject to change. Available in select states. See Details' 
 }
 const modelX =  { title: 'Model X', subtitle: 'From $68,590*', paragraph: 'After Federal Tax Credit & Est. Gas Savings',
-  button1: 'Order Now', button2: 'Demo Drive', imageUrl: '/homepage/homepage-modelX.avif', buttonColor: 'light', color: 'black',
+  button1: 'Explore Inventory', button2: 'Demo Drive', imageUrl: '/homepage/homepage-modelX.avif', buttonColor: 'light', color: 'black',
   bottomParagraph:' *Price before incentives and savings is $79,990, excluding taxes and fees. Subject to change. Learn about est. gas savings.' 
 }
 const modelS =  { title: 'Model S', subtitle: 'From $71,090*', paragraph: 'After Est. Gas Savings',
-  button1: 'Order Now', button2: 'Demo Drive', imageUrl: '/homepage/homepage-modelS.jpg', buttonColor: 'light', color: 'black',
+  button1: 'Explore Inventory', button2: 'Demo Drive', imageUrl: '/homepage/homepage-modelS.jpg', buttonColor: 'light', color: 'black',
   bottomParagraph:'*Price before savings is $74,990, excluding taxes and fees. Subject to change. Learn about est. gas savings.' 
 }
 const cybertruck = { imageUrl: '/homepage/homepage-cybertruck.avif', button1: 'Order Now', button2: 'Learn More', 
