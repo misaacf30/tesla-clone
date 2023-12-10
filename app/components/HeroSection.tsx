@@ -14,9 +14,11 @@ interface Props {
   color: string,
 }
 
-const HeroSection = ({ title, subtitle, paragraph, bottomParagraph, imageUrl, videoUrl, posterUrl, button1, button2, buttonColor, color }: Props) => {
+const HeroSectionTest = ({ title, subtitle, paragraph, bottomParagraph, imageUrl, videoUrl, posterUrl, button1, button2, buttonColor, color }: Props) => {
   return (
-    <section className={`relative h-screen overflow-x-hidden flex ${color === 'white' ? 'text-white' : 'text-[#171A20]'} snap-center`}>
+    <section className={`relative h-[100svh] sm:h-[100vh] overflow-hidden flex 
+        ${color === 'white' ? 'text-white' : 'text-[#171A20]'} snap-center`}
+    >
       <div className='z-0 w-full relative flex flex-col text-center'>
         <h1 className='flex-none text-5xl font-semibold px-6 mt-40'>{title}</h1>
         <h2 className='flex-none text-[20px] font-medium px-6 pt-[6px] '>{subtitle}</h2>
@@ -61,4 +63,4 @@ const HeroSection = ({ title, subtitle, paragraph, bottomParagraph, imageUrl, vi
   )
 }
 
-export default HeroSection
+export default HeroSectionTest

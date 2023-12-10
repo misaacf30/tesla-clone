@@ -87,7 +87,7 @@ interface Props {
 
 const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
     return (
-        <dialog className={`z-30 xl:z-20 w-[100vw] flex flex-col overflow-hidden ${show && 'h-screen  xl:h-auto xl:max-h-[90vh]'}`}
+        <dialog className={`z-30 xl:z-20 w-[100vw] flex flex-col overflow-hidden ${show && 'h-[100svh] sm:h-[100vh] xl:h-auto xl:max-h-[90vh]'}`}
             onMouseLeave={() => { setShowId(''); setShow(false) }}
         >
             {/* Dialog Header for Mobile or < 1200px */}
@@ -115,7 +115,7 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
             </header>
 
             {/* Navigation Ittems for Mobile or < 1200px */}
-            <ol className={`z-40 xl:hidden flex flex-col h-[100vh] w-full overflow-auto pt-[16px] text-[17px] text-[#171A20] 
+            <ol className={`z-40 xl:hidden flex flex-col h-[100svh] sm:h-[100vh] w-full overflow-auto pt-[16px] text-[17px] text-[#171A20] 
                 font-semibold duration-500 ${(showId !== '' || show === false) ? 'hidden' : 'order-first'} `}
             >
                 {navItems.map((item, index) =>
@@ -142,7 +142,7 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
             {/* Vehicles */}
             <div className={`w-full xl:grid grid-cols-12 px-[32px] xl:px-12 opacity-0 max-h-0 duration-300
-                ${showId === 'vehicles' ? 'order-first xl:mt-12 py-2 xl:py-12 opacity-100 max-h-[100vh] xl:max-h-[90vh]' : 'max-h-0'} 
+                ${showId === 'vehicles' ? 'order-first xl:mt-12 py-2 xl:py-12 opacity-100 max-h-[100svh] sm:h-[100vh] xl:max-h-[90vh]' : 'max-h-0'} 
                 *mobile>* flex flex-col overflow-auto divide-y-[1px] xl:divide-y-0`}
             >
                 <div className='col-start-2 col-end-9 grid xl:grid-cols-3 2xl:grid-cols-4 content-start gap-4
@@ -190,7 +190,7 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
             {/* Energy */}
             <div className={`w-full xl:grid grid-cols-12 px-[32px] xl:px-12 opacity-0 max-h-0 duration-300
-                ${showId === 'energy' ? 'order-first xl:mt-12 py-2 xl:py-12 opacity-100 max-h-[100vh] xl:max-h-[90vh]' : 'max-h-0'} 
+                ${showId === 'energy' ? 'order-first xl:mt-12 py-2 xl:py-12 opacity-100 max-h-[100svh] sm:h-[100vh] xl:max-h-[90vh]' : 'max-h-0'} 
                 *mobile>* flex flex-col overflow-auto divide-y-[1px] xl:divide-y-0`}
             >
                 <div className='col-start-2 col-end-9 grid xl:grid-cols-3 2xl:grid-cols-4 content-start gap-4
@@ -230,7 +230,7 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
             {/* Charging */}
             <div className={`w-full xl:grid grid-cols-12 px-[32px] xl:px-12 opacity-0 max-h-0 duration-300
-                ${showId === 'charging' ? 'order-first xl:mt-12 py-2 xl:py-12 opacity-100 max-h-[100vh] xl:max-h-[90vh]' : 'max-h-0'} 
+                ${showId === 'charging' ? 'order-first xl:mt-12 py-2 xl:py-12 opacity-100 max-h-[100svh] sm:h-[100vh] xl:max-h-[90vh]' : 'max-h-0'} 
                 *mobile>* flex flex-col overflow-auto divide-y-[1px] xl:divide-y-0`}
             >
                 <div className='col-start-2 col-end-9 2xl:col-start-3 2xl:col-end-8 grid xl:grid-cols-3 content-start gap-4
@@ -275,7 +275,7 @@ const HeaderDialog = ({ show, showId, setShow, setShowId }: Props) => {
 
             {/* Discover */}
             <div className={`w-full xl:grid grid-cols-12 px-12 opacity-0 max-h-0 overflow-auto duration-300
-                ${showId === 'discover' ? 'order-first pt-[16px] pb-[16px] xl:mt-12 xl:pt-12 xl:pb-12 opacity-100 max-h-[100vh] xl:max-h-[90vh]' : 'max-h-0'}`}
+                ${showId === 'discover' ? 'order-first pt-[16px] pb-[16px] xl:mt-12 xl:pt-12 xl:pb-12 opacity-100 max-h-[100svh] sm:h-[100vh] xl:max-h-[90vh]' : 'max-h-0'}`}
             >
                 <div className='col-start-4 col-end-10 w-full grid grid-cols-1 xl:grid-cols-3'>
                     {discover.map((item: any, index: number) =>
