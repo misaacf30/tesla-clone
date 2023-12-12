@@ -1,3 +1,4 @@
+import Footer from './components/Footer'
 import HeroSection from './components/HeroSection'
 
 const modelY = {
@@ -33,23 +34,28 @@ const demoDrive = {
 export default function Home() {
   return (
     <main className='snap-y snap-mandatory relative h-[100svh] sm:h-[100vh] overflow-auto'> {/* h-screen fallback for browsers that do not suppport custom properties */}
-        <HeroSection title={modelY.title} subtitle={modelY.subtitle} bottomParagraph={modelY.bottomParagraph} videoUrl={modelY.videoUrl}
-          posterUrl={modelY.posterUrl} button1={modelY.button1} button2={modelY.button2} buttonColor={modelY.buttonColor} color={modelY.color} />
+      <HeroSection title={modelY.title} subtitle={modelY.subtitle} bottomParagraph={modelY.bottomParagraph} videoUrl={modelY.videoUrl}
+        posterUrl={modelY.posterUrl} button1={modelY.button1} button2={modelY.button2} buttonColor={modelY.buttonColor} color={modelY.color} />
 
-        <HeroSection title={model3.title} subtitle={model3.subtitle} bottomParagraph={model3.bottomParagraph} imageUrl={model3.imageUrl}
-          button1={model3.button1} button2={model3.button2} buttonColor={model3.buttonColor} color={model3.color} />
+      <HeroSection title={model3.title} subtitle={model3.subtitle} bottomParagraph={model3.bottomParagraph} imageUrl={model3.imageUrl}
+        button1={model3.button1} button2={model3.button2} buttonColor={model3.buttonColor} color={model3.color} />
 
-        <HeroSection title={modelX.title} subtitle={modelX.subtitle} paragraph={modelX.paragraph} bottomParagraph={modelX.bottomParagraph}
-          imageUrl={modelX.imageUrl} button1={modelX.button1} button2={modelX.button2} buttonColor={modelX.buttonColor} color={modelX.color} />
+      <HeroSection title={modelX.title} subtitle={modelX.subtitle} paragraph={modelX.paragraph} bottomParagraph={modelX.bottomParagraph}
+        imageUrl={modelX.imageUrl} button1={modelX.button1} button2={modelX.button2} buttonColor={modelX.buttonColor} color={modelX.color} />
 
-        <HeroSection title={modelS.title} subtitle={modelS.subtitle} paragraph={modelS.paragraph} bottomParagraph={modelS.bottomParagraph}
-          imageUrl={modelS.imageUrl} button1={modelS.button1} button2={modelS.button2} buttonColor={modelS.buttonColor} color={modelS.color} />
+      <HeroSection title={modelS.title} subtitle={modelS.subtitle} paragraph={modelS.paragraph} bottomParagraph={modelS.bottomParagraph}
+        imageUrl={modelS.imageUrl} button1={modelS.button1} button2={modelS.button2} buttonColor={modelS.buttonColor} color={modelS.color} />
 
-        <HeroSection imageUrl={cybertruck.imageUrl} button1={cybertruck.button1} button2={cybertruck.button2} buttonColor={cybertruck.buttonColor}
-          color={cybertruck.color} />
+      <HeroSection imageUrl={cybertruck.imageUrl} button1={cybertruck.button1} button2={cybertruck.button2} buttonColor={cybertruck.buttonColor}
+        color={cybertruck.color} />
 
+      <div className='relative'>
         <HeroSection title={demoDrive.title} paragraph={demoDrive.paragraph} videoUrl={demoDrive.videoUrl} posterUrl={demoDrive.posterUrl}
           button1={demoDrive.button1} buttonColor={demoDrive.buttonColor} color={demoDrive.color} />
+
+        <Footer />
+      </div>
+
     </main>
   )
 }
