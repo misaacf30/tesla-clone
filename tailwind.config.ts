@@ -1,3 +1,4 @@
+import { transform } from 'next/dist/build/swc'
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
@@ -9,6 +10,56 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+      },
+      keyframes: {
+        fadeIn: {
+          'from': {
+            opacity: '0',
+          },
+          'to': {
+            opacity: '100'
+          }
+        },
+        slideInUp: {
+          'from': {
+            transform: 'translateY(100%)',
+            opacity: '0%'
+          },
+          'to': {
+            transform: 'translateY(0%)',
+            opacity: '100%'
+          }
+        },
+        slideInDown: {
+          'from': {
+            transform: 'translateY(-100%)',
+            opacity: '0%'
+          },
+          'to': {
+            transform: 'translateY(0%)',
+            opacity: '100%'
+          }
+        },
+        slideInRight: {
+          'from': {
+            transform: 'translateX(-100%)',
+            opacity: '0%'
+          },
+          'to': {
+            transform: 'translateX(0%)',
+            opacity: '100%'
+          }
+        },
+        slideInLeft: {
+          'from': {
+            transform: 'translateX(100%)',
+            opacity: '0%'
+          },
+          'to': {
+            transform: 'translateX(0%)',
+            opacity: '100%'
+          }
+        }
       },
     },
     screens: {

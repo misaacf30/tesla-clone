@@ -4,7 +4,7 @@ import HeroSection from './components/HeroSection'
 const modelY = {
   title: 'Model Y', subtitle: 'Lease starting at $399/mo', videoUrl: '/homepage/homepage-modelY.mp4',
   posterUrl: '/homepage/homepage-modelY-poster.avif', button1: 'Explore Inventory', button2: 'Demo Drive', buttonColor: 'dark', color: 'white',
-  bottomParagraph: ' *Excludes taxes and fees with price subject to change. Available in select states. See Details'
+  bottomParagraph: ' *Excludes taxes and fees with price subject to change. Available in select states. See Details', firstSection: true
 }
 const model3 = {
   title: 'Model 3', subtitle: 'Lease starting at $329/mo', imageUrl: '/homepage/homepage-model3.avif',
@@ -35,7 +35,8 @@ export default function Home() {
   return (
     <main className='snap-y snap-mandatory relative h-[100svh] sm:h-[100vh] overflow-auto'> {/* h-screen fallback for browsers that do not suppport custom properties */}
       <HeroSection title={modelY.title} subtitle={modelY.subtitle} bottomParagraph={modelY.bottomParagraph} videoUrl={modelY.videoUrl}
-        posterUrl={modelY.posterUrl} button1={modelY.button1} button2={modelY.button2} buttonColor={modelY.buttonColor} color={modelY.color} />
+        posterUrl={modelY.posterUrl} button1={modelY.button1} button2={modelY.button2} buttonColor={modelY.buttonColor} color={modelY.color} 
+        firstSection={modelY.firstSection} />
 
       <HeroSection title={model3.title} subtitle={model3.subtitle} bottomParagraph={model3.bottomParagraph} imageUrl={model3.imageUrl}
         button1={model3.button1} button2={model3.button2} buttonColor={model3.buttonColor} color={model3.color} />

@@ -46,10 +46,12 @@ const Header = () => {
 
     return (
         <div className='w-full z-30 fixed top-0'>
-            <header className={`z-30 w-full absolute flex max-[1200px]:justify-between items-center py-4 ${show ? 'text-[#171A20]' : 'text-white'}`}>
+            <header className={`z-30 w-full absolute flex max-[1200px]:justify-between items-center py-4 ${show ? 'text-[#171A20]' : 'text-white'}
+                opacity-0 animate-[fadeIn_0.5s_ease-in-out_0s_forwards] `}
+            >
                 <h1 className='basis-0 flex-grow flex justify-start pl-[8px] md:pl-[20px] xl:pl-[32px]'>
                     <Link
-                        href={'/'}
+                        href={"/"}
                         className='px-4'
                     >
                         <svg viewBox="0 0 342 35" xmlns="http://www.w3.org/2000/svg"
